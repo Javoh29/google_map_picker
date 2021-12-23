@@ -77,7 +77,7 @@ class SearchInputState extends State<SearchInput> {
               icon: Icon(
                 Icons.arrow_back_ios,
                 size: 22,
-                color: Colors.white,
+                color: Colors.black,
               )),
           SizedBox(width: 8),
           Expanded(
