@@ -72,7 +72,13 @@ class SearchInputState extends State<SearchInput> {
       padding: EdgeInsets.symmetric(horizontal: 8),
       child: Row(
         children: <Widget>[
-          Icon(Icons.search),
+          IconButton(
+              onPressed: () => Navigator.pop(context),
+              icon: Icon(
+                Icons.arrow_back_ios,
+                size: 22,
+                color: Colors.white,
+              )),
           SizedBox(width: 8),
           Expanded(
             child: TextField(
