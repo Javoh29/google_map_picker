@@ -388,9 +388,8 @@ class LocationPickerState extends State<LocationPicker> {
         ChangeNotifierProvider(create: (_) => LocationProvider()),
       ],
       child: Builder(builder: (context) {
-        return Scaffold(
-          extendBodyBehindAppBar: true,
-          body: Stack(
+        return Material(
+          child: Stack(
             children: [
               MapPicker(
                 widget.apiKey,
