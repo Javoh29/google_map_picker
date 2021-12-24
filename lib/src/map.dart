@@ -215,7 +215,8 @@ class MapPickerState extends State<MapPicker> {
       child: Padding(
         padding: widget.resultCardPadding ?? EdgeInsets.all(16.0),
         child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           child: Consumer<LocationProvider>(
               builder: (context, locationProvider, _) {
             return Padding(
@@ -425,7 +426,7 @@ class _MapFabs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.topRight,
-      margin: const EdgeInsets.only(top: kToolbarHeight + 24, right: 8),
+      margin: const EdgeInsets.only(top: kToolbarHeight + 45, right: 8),
       child: Column(
         children: <Widget>[
           if (layersButtonEnabled!)

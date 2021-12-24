@@ -62,6 +62,7 @@ class SearchInputState extends State<SearchInput> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       decoration: widget.boxDecoration ??
           BoxDecoration(
             borderRadius: BorderRadius.circular(16),
